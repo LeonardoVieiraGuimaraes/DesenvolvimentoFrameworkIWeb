@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initialscale=
+1.0"
+    />
+    <title>Diretivas Customizadas</title>
+  </head>
+  <body>
+    <div id="directives">
+      <h2 v-upper>{{name}}</h2>
+      <p v-capitular>
+        A principal diferença entre diretivas globais e locais é que as globais
+        podem ser usadas em todo o aplicativo, enquanto as locais estão
+        limitadas apenas ao escopo do componente em que foram registradas.
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.
+js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-
+filters.min.js"></script>
+    <script>
+      Vue.directive("upper", {
+        inserted: function (el) {
+          el.innerText = el.innerText.toUpperCase();
+        },
+      });
+      let app = new Vue({
+        el: "#directives",
+        data: {
+          name: "Vue.js",
+        },
+        directives: {
+          capitular: function (el) {
+            let words = el.innerText.split(" ");
+            words.forEach(function (text, index) {
+              words[index] = text.charAt(0).toUpperCase() + text.slice(1);
+            });
+            el.innerText = words.join(" ");
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

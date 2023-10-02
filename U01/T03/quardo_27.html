@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diretivas: v-model</title>
+  </head>
+  <body>
+    <div id="directives">
+      <h1 :style="{ fontSize: testSize + 'px' }">Diretivas Vue.js</h1>
+      <input
+        type="text"
+        placeholder="Digite o tamanho do texto"
+        v-model="testSize"
+      />
+      <h2 :style="{ color: testColor }">Mudando a cor da fonte</h2>
+      <input
+        type="text"
+        placeholder="Digite a cor da fonte"
+        v-model="testColor"
+      />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      let app = new Vue({
+        el: "#directives",
+        data: {
+          testSize: 50,
+          testColor: "red",
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diretivas: v-if, v-else-if e v-else</title>
+  </head>
+  <body>
+    <div id="directives">
+      <h1 key="available" v-if="tickets >= 20">Ainda temos ingressos!</h1>
+      <h1 key="almost" v-else-if="tickets >= 1">
+        Temos poucos ingressos, garanta logo o seu!
+      </h1>
+      <h1 key="empty" v-else>Infelizmente não temos mais ingressos!</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      let app = new Vue({
+        el: "#directives",
+        data: {
+          tickets: 50,
+        },
+      });
+    </script>
+  </body>
+</html>
