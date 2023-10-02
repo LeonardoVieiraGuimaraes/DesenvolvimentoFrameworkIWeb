@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Passagem de Dados com Props no Vue.js</title>
+</head>
+<body>
+  <div id="app">
+    <child-component :message="parentMessage"></child-component>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+  <script>
+    // Componente filho que recebe uma prop
+    Vue.component('child-component', {
+      props: ['message'],
+      template: '<p>{{ message }}</p>'
+    });
+
+    new Vue({
+      el: '#app',
+      data: {
+        parentMessage: 'Esta mensagem vem do componente pai.'
+      }
+    });
+  </script>
+</body>
+</html>

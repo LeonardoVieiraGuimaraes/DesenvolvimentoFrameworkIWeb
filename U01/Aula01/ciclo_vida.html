@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo Vue.js - Ciclo de Vida</title>
+    <!-- Inclua a biblioteca Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ message }}</h1>
+    </div>
+
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          message: "Olá, Vue!",
+        },
+        beforeCreate: function () {
+          console.log("beforeCreate: O componente ainda não foi criado.");
+        },
+        created: function () {
+          console.log("created: O componente foi criado.");
+        },
+        beforeMount: function () {
+          console.log(
+            "beforeMount: O componente ainda não foi montado no DOM."
+          );
+        },
+        mounted: function () {
+          console.log("mounted: O componente foi montado no DOM.");
+        },
+        beforeUpdate: function () {
+          console.log(
+            "beforeUpdate: Os dados estão prestes a ser atualizados."
+          );
+        },
+        updated: function () {
+          console.log("updated: Os dados foram atualizados.");
+        },
+        beforeDestroy: function () {
+          console.log(
+            "beforeDestroy: O componente está prestes a ser destruído."
+          );
+        },
+        destroyed: function () {
+          console.log("destroyed: O componente foi destruído.");
+        },
+      });
+    </script>
+  </body>
+</html>

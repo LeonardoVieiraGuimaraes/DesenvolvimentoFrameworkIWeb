@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Vue.js - Propriedade Computada</title>
+  <!-- Inclua a biblioteca Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <p>Quantidade: {{ quantidade }}</p>
+    <p>Preço Unitário: {{ precoUnitario }}</p>
+    <p>Total: {{ total }}</p>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        quantidade: 5,
+        precoUnitario: 10,
+      },
+      computed: {
+        total: function() {
+          return this.quantidade * this.precoUnitario;
+        },
+      },
+    });
+  </script>
+</body>
+</html>
