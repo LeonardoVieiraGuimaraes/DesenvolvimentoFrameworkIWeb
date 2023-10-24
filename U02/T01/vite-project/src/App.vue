@@ -3,8 +3,13 @@
 import figura01 from './components/figura01.vue'
 import figura02 from './components/figura02.vue'
 import figura03 from './components/figura03.vue'
-// import figura07 from './components/figura07.vue'
+import figura04 from './components/figura04.vue'
+import figura05 from './components/figura05.vue'
+import figura06 from './components/figura06.vue'
+import figura07 from './components/figura07.vue'
 import figura08 from './components/figura08.vue'
+import figura09 from './components/figura09.vue'
+import figura10 from './components/figura10.vue'
 </script>
 
 <template>
@@ -15,11 +20,16 @@ import figura08 from './components/figura08.vue'
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a> -->
-    <!-- <figura01 />
+    <figura01 />
     <figura02 />
-    <figura03 /> -->
-    <!-- <figura07 /> -->
+    <figura03 />
+    <figura04 />
+    <figura05 />
+    <figura06 />
+    <figura07 />
     <figura08 />
+    <figura09 />
+    <figura10 />
   </div>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
   

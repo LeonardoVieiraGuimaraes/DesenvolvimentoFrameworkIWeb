@@ -1,4 +1,4 @@
-
+<!-- Passando props entre componentes pai e filho – parte 2 -->
 <template>
   <div>
     <p Name:> {{ name }}</p>
@@ -13,12 +13,6 @@ export default {
   props: {
     name: String,
     age: Number
-
-  },
-  data() {
-    return {
-      // data properties
-    };
   }
 }
 </script>

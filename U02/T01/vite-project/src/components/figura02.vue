@@ -1,3 +1,4 @@
+<!-- Diretivas em código Vue.js -->
 <template>
     <div>
         <!-- exibe o valor da propriedade title no elemento hl usando interpolacao de string title -->

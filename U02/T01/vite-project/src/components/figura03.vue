@@ -1,3 +1,5 @@
+<!-- Mais algumas diretivas com Vue.js -->
+
 <template>
 
 </template>

@@ -1,3 +1,4 @@
+<!-- Emitindo um evento de um componente filho para o pai – parte 2 -->
 <template>
   <div>
     <child-component @increment="updateCounter" />

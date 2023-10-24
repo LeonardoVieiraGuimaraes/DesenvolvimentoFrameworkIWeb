@@ -1,3 +1,4 @@
+<!-- Estrutura básica de um componente Vue.js -->
 <template>
 
 </template>
