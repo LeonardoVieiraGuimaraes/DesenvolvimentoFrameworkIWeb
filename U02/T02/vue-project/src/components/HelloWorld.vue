@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script setup>
 defineProps({
   msg: {
@@ -5,6 +6,12 @@ defineProps({
     required: true
   }
 })
+=======
+<script setup lang="ts">
+defineProps<{
+  msg: string
+}>()
+>>>>>>> 70107d9bec1f90e9feb499cb70565ef8a5ad66a6
 </script>
 
 <template>

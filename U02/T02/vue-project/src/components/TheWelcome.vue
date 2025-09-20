@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <script setup>
+=======
+<script setup lang="ts">
+>>>>>>> 70107d9bec1f90e9feb499cb70565ef8a5ad66a6
 import WelcomeItem from './WelcomeItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'

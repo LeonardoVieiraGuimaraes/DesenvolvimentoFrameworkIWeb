@@ -17,8 +17,7 @@
       <!-- Itera sobre a matriz "itens" e aplica uma classe se o índice for igual ao valor de "activeIndex" -->
       <ul>
         <li
-          v-for="(item, index) in itens"
-          :class="{ active: index === activeIndex }"
+          v-for="(item, index) in itens" :class="{ active: index === activeIndex }"
         >
           {{ item }}
         </li>

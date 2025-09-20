@@ -1,5 +1,5 @@
 {
-  "name": "alo_mundo",
+  "name": "vue-project-01",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<<< HEAD:U02/T02/vue-project/package.json
+    "bulma": "^0.9.4",
     "vue": "^3.3.4"
+========
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+>>>>>>>> 70107d9bec1f90e9feb499cb70565ef8a5ad66a6:U03/Aula/vue-project-01/package.json
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.4",

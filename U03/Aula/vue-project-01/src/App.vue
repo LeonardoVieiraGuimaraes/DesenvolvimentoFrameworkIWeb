@@ -1,17 +1,24 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import 'bulma/css/bulma.css'
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+  
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+  
+      <button class="button">
+        Button
+      </button>
+
+      <button class="button is-primary">Botão Bulma</button>
     </div>
   </header>
-
+  
   <main>
     <TheWelcome />
   </main>

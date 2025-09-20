@@ -1,3 +1,12 @@
 {
+<<<<<<< HEAD
   "recommendations": ["Vue.volar", "Vue.vscode-typescript-vue-plugin"]
+=======
+  "recommendations": [
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+>>>>>>> 70107d9bec1f90e9feb499cb70565ef8a5ad66a6
 }
